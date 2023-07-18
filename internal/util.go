@@ -64,7 +64,7 @@ func simpleMatch(patternStr string, str string, msg ...string) bool {
 }
 
 func htmlPre(str string) string {
-	return "<pre>" + html.EscapeString(str) + "</pre>"
+	return "<pre style=\"max-width: 768px; overflow: auto;\">" + html.EscapeString(str) + "</pre>"
 }
 
 func dsnSort(dsn string) string {
